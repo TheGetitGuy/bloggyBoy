@@ -13,7 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>This is an H1</h1>
-      <Link href="/posts/1">AH</Link>
+      <Link href="/posts/1">Epoch 0</Link>
+      <Link href="posts/2">Blog 1</Link>
       
       </div>
   )

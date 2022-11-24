@@ -1,6 +1,8 @@
 ---
-title: page 1
+title: Epoch 0 entry
+epoch: 0
 ---
-# hello
-* I like you,
-* you like me
+# Welcome
+>Take a seat fellow traveler, I see you're here, at the Beginning of the Epoch.. We do enjoy you're company, so why don't you take a seat and read around?
+
+>_**oh, you want content?** FUCK OFF..._
