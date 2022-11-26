@@ -17,7 +17,7 @@ const PostRoute = ({element}:IPostRouter) =>{
     return (
         <>
             <h1>{title}</h1> 
-            <Markdown>{content}</Markdown>
+            <Markdown gfm={true}>{content}</Markdown>
         </>
     )
 }
@@ -28,7 +28,7 @@ export function getStaticPaths(){
     const dir = fs.readdirSync((process.cwd() + "/markdown"))
 
     const paths =  dir.map((currentItem)=>{
-        const itemName = currentItem.replace(/\.md$/, '')
+        const itemName = currentItem.replace(/\.md$/, "")
         return {
             params:{
                 pid: itemName.slice(itemName.length - 1)

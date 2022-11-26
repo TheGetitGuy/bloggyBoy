@@ -6,7 +6,7 @@ import postsUrl from './posts/[pid]'
 
 export default function Home() {
   return (
-      <div className={styles.pageContainer}>
+      <div className="flex ">
       <Head>
         <title> Blog It UP!</title>
         <meta name="description" content="Let's blog baby" />
