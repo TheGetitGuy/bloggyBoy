@@ -1,21 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import react from "react"
+import heartSvg from "../public/heart.svg"
+import arrowRSvg from "../public/arrowRight.svg"
+import receptionImage from "../public/receptionImage.jpg"
 import Link from 'next/link'
+import Post from '../components/Post'
 import styles from '../styles/Home.module.scss'
 import postsUrl from './posts/[pid]'
-
 export default function Home() {
   return (
-      <div className="flex ">
+    <div className="flex min-h-full justify-center">
       <Head>
         <title> Blog It UP!</title>
         <meta name="description" content="Let's blog baby" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>This is an H1</h1>
-      <Link href="/posts/1">Epoch 0</Link>
-      <Link href="posts/2">Blog 1</Link>
+      <Post id='1'/>
       
-      </div>
+    </div>
   )
 }
