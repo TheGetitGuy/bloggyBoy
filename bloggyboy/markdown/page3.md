@@ -2,6 +2,7 @@
 title: Here comes the music
 epoch: 1669267237 
 posted: false
+image: https://picsum.photos/401
 ---
 # Music, can be Life.
 

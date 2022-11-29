@@ -1,24 +1,23 @@
-import { useRouter } from "next/router";
-import Post from "../../components/Post";
 import fs from "node:fs";
-import { remark } from "remark";
-import reactMark from "remark-react";
-import parse from "remark-parse";
 import Markdown from 'marked-react'
-import  {unified } from "unified";
 import grayMatter from 'gray-matter'
-
+import styles from '../../styles/Home.module.scss'
 interface IPostRouter{
     element: string
 }
 const PostRoute = ({element}:IPostRouter) =>{  
     const parseProperties = grayMatter(element)
-    const {content, data:{title}} = parseProperties
+    const {content, data:{title, image}} = parseProperties
     return (
-        <>
-            <h1>{title}</h1> 
-            <Markdown gfm={true}>{content}</Markdown>
-        </>
+        <div className={'box-border text-primary flex flex-wrap'}>
+            <h1 className="m-8 w-full text-center text-6xl">{title}</h1> 
+            <div className="w-full flex justify-center">
+                <img src={image} alt={title}></img>
+            </div>
+            <div className={styles.markdownPage}>
+                <Markdown gfm={true}>{content}</Markdown>
+            </div>
+        </div>
     )
 }
 export default PostRoute

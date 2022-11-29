@@ -2,8 +2,9 @@
 title: DevBlog 1 
 epoch: 1669249715
 posted: false
+image: https://picsum.photos/399
 ---
-# Welcome
+# Hello friends
 
 ---
 

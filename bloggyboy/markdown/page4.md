@@ -2,6 +2,7 @@
 title: NextJs
 epoch: 1669267260
 posted: false
+image: https://picsum.photos/402
 ---
 
 # It fucking sucks
