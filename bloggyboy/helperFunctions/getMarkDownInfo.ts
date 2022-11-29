@@ -2,7 +2,7 @@ import fs from "node:fs";
 import grayMatter from 'gray-matter';
 import path from "path"
 interface mdInter{
-postId:string
+postId:string | string[],
 }
 function getMarkDownInfo({ postId }:mdInter):grayMatter.GrayMatterFile<string> | false{
   const files = fs.readdirSync(path.resolve('markdown'))
