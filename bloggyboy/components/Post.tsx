@@ -5,6 +5,8 @@ import arrowRSvg from "../public/arrowRight.svg"
 import receptionImage from "../public/receptionImage.jpg"
 import Markdown from "marked-react" 
 import styles from '../styles/Home.module.scss'
+import handleVibes from '../helperFunctions/handleVibes'
+ 
 interface Props {
   id:string, 
   content:string,
@@ -22,7 +24,7 @@ const Post = ( props: Props ):JSX.Element => {
                 <Markdown>{contentParsed}</Markdown>
                 </div>
             </div>
-            <Link href={`/posts/${id}`} className='h-fit'>
+            <Link onClick={handleVibes([20,10,20,10,5,5,1])} href={`/posts/${id}`} className='h-fit'>
                 <div role="button" className=' bg-white rounded border-secondary text-center text-md hover:bg-secondary text-secondaryDark transition-all shadow-md p-1 hover:shadow-xl'>
                 Read More
                     <Image className='inline h-8 ' src={arrowRSvg} alt="->"/>
